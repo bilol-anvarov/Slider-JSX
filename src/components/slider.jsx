@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import products from './slider-text'
-
+// import image from './../media/product1.jpg'
 
 export default function Slider() {
     let [num, setNum] = useState(0);
@@ -18,9 +18,9 @@ export default function Slider() {
         } else{
             setNum(num -= 1)
         }
-
+        
     }
-
+    
     return (
     <div className='flex'>
         <button onClick={less}>{'<'}</button>
